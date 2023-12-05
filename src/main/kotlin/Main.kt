@@ -43,7 +43,7 @@ fun calculadora(){
     println(" por fim diga qual operaçao quer fazer + - * /")
     var operator = readLine()
     //condicional de operador
-while (operator == "+" && operator == "-" && operator == "*" && operator == "/" ){
+if (operator !== "+" || operator !== "-" || operator !== "*" || operator !== "/" ){
     println("operador incorreto, Digite novamente")
     operator = readLine()
 }
@@ -64,13 +64,13 @@ while (operator == "+" && operator == "-" && operator == "*" && operator == "/" 
              }
          }
          else if (operator == "*"){
-                 if (operator == "+"){
+                 if (operator == "*"){
                      total = first!!.toInt() + secund!!.toInt()
                      println(total)
 
              }         }
          else if (operator == "/"){
-                 if (operator == "+"){
+                 if (operator == "/"){
                      total = first!!.toInt() + secund!!.toInt()
                      println(total)
 
